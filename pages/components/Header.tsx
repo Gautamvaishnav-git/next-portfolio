@@ -9,7 +9,7 @@ const Header = () => {
         <div className="xl:container m-auto px-6 md:px-12 lg:px-6">
           <div className="flex flex-wrap items-center justify-between gap-6 md:py-3 md:gap-0 lg:py-5">
             <div className="w-full items-center flex justify-between lg:w-auto">
-              <Link href="/" className="relative  z-10" aria-label="logo">
+              <Link href="/" className="relative text-3xl text-white font-bold z-10" aria-label="logo">
                 Gautam
               </Link>
               <label
