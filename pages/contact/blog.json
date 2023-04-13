@@ -1,0 +1,23 @@
+[
+  {
+    "link": "https://dev.to/gautamvaishnav",
+    "imageLink": "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/DevTo-Dark.svg",
+    "blogs": 3,
+    "reactions": 8,
+    "readings": 186
+  },
+  {
+    "link": "https://hashnode.com/@GautamVaishnav",
+    "imageLink": "https://camo.githubusercontent.com/1733971dd4cbd0a50afddd9129ff189d9ae79c108eb1c75d31c2e8a10034bac8/68747470733a2f2f63646e2e686173686e6f64652e636f6d2f7265732f686173686e6f64652f696d6167652f75706c6f61642f76313631313930323437333338332f4344794175547937352e706e673f6175746f3d636f6d7072657373",
+    "blogs": 3,
+    "reactions": 10,
+    "readings": 20
+  },
+  {
+    "link": "https://app.daily.dev/Gautam_Vaishnav",
+    "imageLink": "https://docs.daily.dev/img/logo.png",
+    "blogs": 108,
+    "reactions": 2,
+    "readings": 108
+  }
+]
