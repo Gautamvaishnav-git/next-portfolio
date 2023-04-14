@@ -25,16 +25,16 @@ const Blog = ({
             alt="blog link"
           />
         </a>
-        <div>
-          <p className="text-md pb-1 flex items-center gap-6 leading-4 font-semibold text-sky-500 capitalize">
+        <div className="flex flex-col gap-1 w-full">
+          <p className="text-md pb-1 flex items-center gap-6 leading-4 font-semibold text-sky-500 capitalize bg-gray-700 p-2 rounded grow">
             {blogs}+
             <span className="text-gray-400 font-normal text-sm text-right grow">blogs</span>
           </p>
-          <p className="text-md pb-1 flex items-center gap-6 leading-4 font-semibold text-sky-500 capitalize">
+          <p className="text-md pb-1 flex items-center gap-6 leading-4 font-semibold text-sky-500 capitalize bg-gray-700 p-2 rounded grow">
             {reactions}+
             <span className="text-gray-400 font-normal text-sm text-right grow">reactions</span>
           </p>
-          <p className="text-md pb-1 flex items-center gap-6 leading-4 font-semibold text-sky-500 capitalize">
+          <p className="text-md pb-1 flex items-center gap-6 leading-4 font-semibold text-sky-500 capitalize bg-gray-700 p-2 rounded grow">
             {readings}+
             <span className="text-gray-400 font-normal text-sm text-right grow">readings</span>
           </p>

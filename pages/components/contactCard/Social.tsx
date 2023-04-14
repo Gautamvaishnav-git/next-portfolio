@@ -23,16 +23,18 @@ const Social = ({
             alt="social link"
           />
         </a>
-        <div>
-          <p className="text-md flex items-center gap-2 pb-1 leading-4 font-semibold text-sky-500 capitalize">
+        <div className="flex flex-col gap-1 w-full">
+          <p className="text-md flex items-center gap-2 pb-1 leading-4 font-semibold text-sky-500 capitalize bg-gray-700 p-2 rounded grow">
             {connections}+
             <span className="text-gray-400 font-normal text-sm grow text-right">
               connections
             </span>
           </p>
-          <p className="text-md flex items-center gap-2 pb-1 leading-4 font-semibold text-sky-500 capitalize">
+          <p className="text-md flex items-center gap-2 pb-1 leading-4 font-semibold text-sky-500 capitalize bg-gray-700 p-2 rounded grow">
             {followers}+
-            <span className="text-gray-400 font-normal text-sm grow text-right">followers</span>
+            <span className="text-gray-400 font-normal text-sm grow text-right">
+              followers
+            </span>
           </p>
         </div>
       </div>
