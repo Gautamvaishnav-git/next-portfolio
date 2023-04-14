@@ -1,8 +1,11 @@
+import Card from "../components/freelance/Card";
+
 const Freelance = () => {
   return (
     <>
-      <h1>Freelance</h1>
-      hello
+      <div className="px-4 py-12">
+        <Card />
+      </div>
     </>
   );
 };
