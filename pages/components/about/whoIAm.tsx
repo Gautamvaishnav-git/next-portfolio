@@ -1,22 +1,33 @@
 import Image from "next/image";
+import { Typewriter } from "react-simple-typewriter";
 
 const WhoIAm = () => {
   return (
     <>
-      <div className="sm:w-4/5 mx-auto relative sm:p-6 p-2 rounded bg-gray-800">
+      <div className="sm:w-3/4 mx-auto relative sm:p-6 p-2 rounded bg-gradient-to-tl from-green-900/60 to-gray-900/60">
         <Image
           src="/gautam.webp"
           alt="gautam"
           width="600"
           height="600"
           draggable="false"
-          className="object-contain rounded-full absolute sm:translate-x-0 left-[0%] right-[0%] mx-auto sm:left-auto md:right-10 sm:-right-10 -top-[4rem] border-8 border-slate-900 w-44 h-4w-44"
+          className="object-contain rounded-full absolute sm:translate-x-0 left-[0%] right-[0%] mx-auto sm:left-auto md:right-10 sm:-right-10 -top-[4rem] border-8 border-slate-900 w-44 h-44"
         />
-        <h4 className="text-5xl font-bold bg-gradient-to-tr from-green-500 via-sky-500 to-green-500 bg-clip-text leading-10 text-transparent sm:p-0 pt-32">
+        <h4 className="sm:text-5xl text-3xl font-bold bg-gradient-to-tr from-green-500 via-sky-500 to-green-500 bg-clip-text leading-10 text-transparent sm:p-0 pt-32">
           Gautam Vaishnav
           <br />
-          <span className="text-white font-semibold text-2xl">
-            MERN Stack Developer
+          <span className="text-white font-semibold sm:text-2xl text-xl">
+            <Typewriter
+              words={[
+                "MERN Stack Developer.",
+                "Frontend Developer.",
+                "Backend Developer.",
+                "NodeJs Developer.",
+              ]}
+              loop={0}
+              cursor
+              cursorColor="currentColor"
+            />
           </span>
           .
         </h4>
@@ -37,10 +48,13 @@ const WhoIAm = () => {
           in React, I am able to create dynamic user interfaces that respond
           quickly to user input, making your applications more efficient and
           effective.
-          <br /> Overall, I experience as a MERN stack developer makes me a
-          valuable asset to any team looking to build modern, responsive, and
-          scalable web applications.
         </p>
+        <a
+          href="mailto:gauravvaishnav8690@gmail.com"
+          className="mt-4 block py-2 px-4 bg-sky-900 w-fit rounded hover:bg-sky-700 border font-medium border-transparent hover:border-gray-700 duration-200 text-white"
+        >
+          Hire Me!
+        </a>
       </div>{" "}
     </>
   );
