@@ -15,7 +15,9 @@ const Card = () => {
           />
         </a>
         <div className="pt-4 pb-8">
-          <h2 className="py-2 text-xl font-bold text-sky-500 text-center">Stats</h2>
+          <h2 className="py-2 text-xl font-bold text-sky-500 text-center">
+            Stats
+          </h2>
           <article className="flex justify-center gap-10 pb-2">
             <div className="flex gap-6 w-full sm:w-1/4 md:w-1/5">
               <span className="text-green-500 font-bold">96%</span>
@@ -59,7 +61,7 @@ const Card = () => {
         <a
           href="https://www.freelancer.in/u/PradhumnSingh"
           target="_blank"
-          className="text-center p-2 mt-4 block text-white border border-transparent hover:border-sky-500 hover:bg-transparent hover:text-black duration-200 bg-sky-500 rounded w-fit mx-auto text-xl font-bold"
+          className="text-center py-2 px-3 mt-4 block text-white border border-transparent hover:border-sky-500 hover:bg-transparent hover:text-black duration-200 bg-sky-500 rounded w-fit mx-auto text-xl"
         >
           {"Let's"} work with us!
         </a>
