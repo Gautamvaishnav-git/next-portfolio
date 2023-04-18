@@ -1,6 +1,6 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
-import Header from "./components/Header";
+import Header from "./components/Header/Header";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 
@@ -9,21 +9,27 @@ export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 1000);
+    }, 2300);
   }, []);
   return (
     <>
-      {loading && (
-        <Image
-          src="/loading.gif"
-          alt="loading"
-          width={2000}
-          height={2000}
-          className="fixed top-0 h-screen w-auto z-[54]"
-        />
+      {loading ? (
+        <div className="w-full h-screen fixed bg-black z-[54]">
+          <Image
+            src="/preloader.gif"
+            alt="preloader"
+            width={2000}
+            height={2000}
+            priority
+            className="top-0 w-full h-full mx-auto object-contain hue-rotate-60"
+          />
+        </div>
+      ) : (
+        <>
+          <Header />
+          <Component {...pageProps} />
+        </>
       )}
-      <Header />
-      <Component {...pageProps} />
     </>
   );
 }
