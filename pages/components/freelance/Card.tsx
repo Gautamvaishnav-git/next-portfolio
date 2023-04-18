@@ -19,7 +19,7 @@ const Card = () => {
           <h2 className="py-2 text-xl font-bold text-sky-500 text-center">
             Stats
           </h2>
-          <article className="flex justify-center gap-10 pb-2">
+          <article className="flex flex-col sm:flex-row justify-center sm:gap-10 sm:pb-2 pb-4">
             <div className="flex gap-6 w-full sm:w-1/4 md:w-1/5">
               <span className="text-green-500 font-bold">96%</span>
               <span className="text-gray-700 grow text-right">
@@ -31,7 +31,7 @@ const Card = () => {
               <span className="text-gray-700 grow text-right">On Budget</span>
             </div>
           </article>
-          <article className="flex justify-center gap-10 pb-2">
+          <article className="flex flex-col sm:flex-row justify-center sm:gap-10 sm:pb-2 pb-4">
             <div className="flex gap-6 w-full sm:w-1/4 md:w-1/5">
               <span className="text-green-500 font-bold">94%</span>
               <span className="text-gray-700 grow text-right">On Time</span>
