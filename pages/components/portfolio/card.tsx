@@ -4,11 +4,9 @@ import { BiLinkExternal } from "react-icons/bi";
 import Image from "next/image";
 import { AiFillGithub, AiOutlineLink } from "react-icons/ai";
 
-
 const Card = (props: propsTypes) => {
   const {
     projectName,
-    id,
     ProjectsLength,
     index,
     image,
@@ -54,17 +52,21 @@ const Card = (props: propsTypes) => {
             </p>
           ))}
         </div>
-        <div className="flex w-full gap-4 pt-4">
+        <div className="flex w-full pt-4">
           {projectLinks.map((pLink, index) => (
             <motion.a
               href={pLink.link}
               target="_blank"
-              className="w-8 text-white hover:text-sky-500"
+              className="w-16 text-white hover:text-sky-500"
               key={index}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >
-              {pLink.icon === "git hub" ? <AiFillGithub/> : <AiOutlineLink />}
+              {pLink.icon === "git hub" ? (
+                <AiFillGithub size={32} />
+              ) : (
+                <AiOutlineLink size={32} />
+              )}
             </motion.a>
           ))}
         </div>
@@ -77,7 +79,6 @@ export default Card;
 
 interface propsTypes {
   projectName: string;
-  id: string;
   ProjectsLength: number;
   index: number;
   image: string;
