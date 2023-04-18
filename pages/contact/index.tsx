@@ -12,16 +12,18 @@ const Contact = () => {
           <h2 className="text-3xl font-bold text-white pb-3">Social Media</h2>
           <div className="flex gap-2 flex-wrap">
             {social.map((item, index) => (
-              <Social {...item} key={index} />
+              <Social {...item} key={index} index={index} />
             ))}
           </div>
         </div>
 
         <div className="pb-8">
-          <h2 className="text-3xl font-bold text-white pb-3">Blogs and readings </h2>
+          <h2 className="text-3xl font-bold text-white pb-3">
+            Blogs and readings{" "}
+          </h2>
           <div className="flex gap-2 flex-wrap">
             {blog.map((item, index) => (
-              <Blog {...item} key={index} />
+              <Blog {...item} key={index} index={index} />
             ))}
           </div>
         </div>

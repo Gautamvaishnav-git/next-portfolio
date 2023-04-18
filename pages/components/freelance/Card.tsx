@@ -1,5 +1,6 @@
 import Image from "next/image";
 import services from "./services.json";
+import { motion } from "framer-motion";
 
 const Card = () => {
   return (
@@ -48,13 +49,16 @@ const Card = () => {
           <h2 className="text-xl font-bold">Services</h2>
           {services.map((service, index) => {
             return (
-              <div
+              <motion.div
                 className="flex justify-between items-center p-2 bg-gray-100 rounded hover:bg-sky-200 duration-200"
                 key={index}
+                initial={{ y: (100 * index) / 10 }}
+                viewport={{ once: true }}
+                whileInView={{ y: 0 }}
               >
                 <span className="">{service}</span>
                 <span className="text-xl">✅</span>
-              </div>
+              </motion.div>
             );
           })}
         </div>

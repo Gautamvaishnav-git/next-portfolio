@@ -1,10 +1,16 @@
 import Image from "next/image";
 import { Typewriter } from "react-simple-typewriter";
+import { motion } from "framer-motion";
 
 const WhoIAm = () => {
   return (
     <>
-      <div className="sm:w-3/4 mx-auto relative sm:p-6 p-2 rounded bg-gradient-to-tl from-green-900/60 to-gray-900/60">
+      <motion.div
+        initial={{ y: 100 }}
+        whileInView={{ y: 0 }}
+        transition={{ ease: "easeIn", delay: 0.1 }}
+        className="sm:w-3/4 mx-auto relative sm:p-6 p-2 rounded bg-gradient-to-tl from-green-900/60 to-gray-900/60"
+      >
         <Image
           src="/gautam.webp"
           alt="gautam"
@@ -49,13 +55,15 @@ const WhoIAm = () => {
           quickly to user input, making your applications more efficient and
           effective.
         </p>
-        <a
+        <motion.a
+          whileHover={{ scale: 1.06 }}
+          whileTap={{ scale: 1 }}
           href="mailto:gauravvaishnav8690@gmail.com"
           className="mt-4 block py-2 px-4 bg-sky-900 w-fit rounded hover:bg-sky-700 border font-medium border-transparent hover:border-gray-700 duration-200 text-white"
         >
           Hire Me!
-        </a>
-      </div>{" "}
+        </motion.a>
+      </motion.div>{" "}
     </>
   );
 };

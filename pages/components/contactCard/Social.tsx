@@ -1,19 +1,28 @@
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const Social = ({
   followers,
   connections,
   link,
   imageLink,
+  index,
 }: {
   followers: number;
   connections: number;
   link: string;
   imageLink: string;
+  index: number;
 }) => {
   return (
     <>
-      <div className="p-2 rounded sm:w-fit sm:grow-0 grow bg-gray-800 hover:bg-gradient-to-b hover:from-sky-500/30 duration-150 flex flex-col items-center gap-2">
+      <motion.div
+        initial={{ y: 100 }}
+        whileInView={{ y: 0 }}
+        transition={{ ease: "easeIn", duration: index / 10 + 0.2 }}
+        viewport={{ once: true }}
+        className="p-2 rounded sm:w-fit sm:grow-0 grow bg-gray-800 hover:bg-gradient-to-b hover:from-sky-500/30 duration-150 flex flex-col items-center gap-2"
+      >
         <a href={link} className="pb-2" target="_blank">
           <Image
             src={imageLink}
@@ -37,7 +46,7 @@ const Social = ({
             </span>
           </p>
         </div>
-      </div>
+      </motion.div>
     </>
   );
 };

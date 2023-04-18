@@ -6,6 +6,16 @@
   body {
     @apply bg-slate-900;
   }
+  ::selection {
+    @apply bg-sky-500 text-white;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+    @apply bg-slate-800;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-sky-500/50 rounded-md hover:bg-sky-500;
+  }
   .navLink::after {
     content: "";
     width: 0%;
@@ -26,6 +36,19 @@
     }
     100% {
       width: 110%;
+    }
+  }
+
+  .project:hover .info {
+    animation: bottomZero 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    bottom: 0;
+  }
+  @keyframes bottomZero {
+    from {
+      bottom: -100px;
+    }
+    to {
+      bottom: 0;
     }
   }
 }
