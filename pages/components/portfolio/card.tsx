@@ -2,6 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import { BiLinkExternal } from "react-icons/bi";
 import Image from "next/image";
+import { AiFillGithub, AiOutlineLink } from "react-icons/ai";
+
 
 const Card = (props: propsTypes) => {
   const {
@@ -62,7 +64,7 @@ const Card = (props: propsTypes) => {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
             >
-              {pLink.icon}
+              {pLink.icon === "git hub" ? <AiFillGithub/> : <AiOutlineLink />}
             </motion.a>
           ))}
         </div>
@@ -79,7 +81,7 @@ interface propsTypes {
   ProjectsLength: number;
   index: number;
   image: string;
-  projectLinks: { link: string; icon: JSX.Element }[];
+  projectLinks: { link: string; icon: string }[];
   description: string;
   technologies: string[];
 }
