@@ -59,7 +59,7 @@ const WhoIAm = () => {
           href="mailto:gauravvaishnav8690@gmail.com"
           className="mt-4 block py-2 px-4 bg-sky-900 w-fit rounded hover:bg-sky-700 border font-medium border-transparent hover:border-gray-700 duration-200 text-white"
         >
-          Let's Work together
+          {"Let's"} Work together
         </motion.a>
       </motion.div>
     </>
