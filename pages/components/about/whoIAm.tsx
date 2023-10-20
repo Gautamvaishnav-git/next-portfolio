@@ -39,19 +39,17 @@ const WhoIAm = () => {
         </h4>
 
         <p className="pt-8 text-gray-200 leading-8 tracking-wide [word-spacing:5px]">
-          As a MERN stack developer, I bring a wide range of skills and
-          experience to the table. I am proficient in using MongoDB, Express.js,
-          React, and Node.js to build dynamic, modern web applications that meet
+          As a Full-Stack developer, I bring many skills and
+          experience. I am proficient in using NoSql, SQL databases, and NoddJs frameworks like Express and NestJs to build dynamic, modern and scalable web applications that meet
           the needs of clients and users alike.
           <br />I have a strong understanding of front-end development,
-          including HTML, CSS, and JavaScript, and I am able to create
+          including React, Next, and Typescript, and I am able to create
           responsive and user-friendly interfaces that provide an engaging user
           experience. Additionally, I have expertise in server-side development
-          using Node.js and Express, and I am able to create robust and scalable
+          using Node.js, Express, and NestJS and I am able to create robust and scalable
           back-end systems that can handle high volumes of traffic. <br /> I am
-          also skilled in using MongoDB to create and manage databases, and I
-          have experience working with data format like JSON. With I expertise
-          in React, I am able to create dynamic user interfaces that respond
+          also skilled in using NoSql and Sql databases to create and manage databases. I have expertise
+          in React/Next, and I am able to create dynamic user interfaces that respond
           quickly to user input, making your applications more efficient and
           effective.
         </p>
@@ -61,9 +59,9 @@ const WhoIAm = () => {
           href="mailto:gauravvaishnav8690@gmail.com"
           className="mt-4 block py-2 px-4 bg-sky-900 w-fit rounded hover:bg-sky-700 border font-medium border-transparent hover:border-gray-700 duration-200 text-white"
         >
-          Hire Me!
+          Let's Work together
         </motion.a>
-      </motion.div>{" "}
+      </motion.div>
     </>
   );
 };
