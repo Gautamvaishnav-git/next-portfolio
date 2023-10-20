@@ -40,7 +40,7 @@ const WhoIAm = () => {
 
         <p className="pt-8 text-gray-200 leading-8 tracking-wide [word-spacing:5px]">
           As a Full-Stack developer, I bring many skills and
-          experience. I am proficient in using NoSql, SQL databases, and NoddJs frameworks like Express and NestJs to build dynamic, modern and scalable web applications that meet
+          experience. I am proficient in using NoSql, SQL databases, and NodeJs frameworks like Express and NestJs to build dynamic, modern and scalable web applications that meet
           the needs of clients and users alike.
           <br />I have a strong understanding of front-end development,
           including React, Next, and Typescript, and I am able to create
