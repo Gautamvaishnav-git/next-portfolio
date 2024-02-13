@@ -9,10 +9,10 @@ const Desktop = () => {
           <div className="w-full items-center flex justify-between lg:w-auto">
             <Link
               href="/"
-              className="relative text-3xl text-white font-bold z-10"
+              className="relative text-4xl text-white font-bold z-10"
               aria-label="logo"
             >
-              Gautam
+              G<span className="text-gray-500 text-3xl">autam</span>
             </Link>
           </div>
           <div className="hidden w-full flex-wrap justify-end items-center mb-16 space-y-8 p-6 border rounded-3xl shadow-2xl shadow-gray-300/20 bg-gray-800 lg:space-y-0 lg:p-0 lg:m-0 lg:flex md:flex-nowrap lg:bg-transparent lg:w-7/12 lg:shadow-none border-gray-700 lg:border-0">

@@ -27,11 +27,11 @@ const Hero = () => {
             variants={variants}
             className="sm:mx-auto sm:w-10/12 md:w-2/3 font-black text-4xl text-center sm:text-5xl md:text-6xl lg:w-auto lg:text-left xl:text-7xl text-white"
           >
-            MERN and TNT Stack developer
+            Full Stack Stack developer
             <br className="lg:block hidden" />{" "}
             <span className="relative block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">
               <Typewriter
-                words={["Open to work.", "Fresher.", "Immediate joiner."]}
+                words={["MEAN/MERN", "Azure, Aws", "System Design"]}
                 loop={0}
                 cursor
                 cursorColor="white"
@@ -48,8 +48,9 @@ const Hero = () => {
           >
             <div className="relative mt-8 md:mt-16 space-y-8 sm:w-10/12 md:w-2/3 lg:ml-0 sm:mx-auto text-center lg:text-left lg:mr-auto lg:w-7/12">
               <p className="sm:text-lg text-gray-300 lg:w-11/12">
-                Hi there, this is Gautam Vaishnav. I am a MERN and TNT stack
-                developer. Currently looking for a new Opportunity.
+                Experience in a variety of industries which includes hands-on
+                experience in Node.js, ReactJS, AngularJS, core JavaScript, and
+                databases (SQL/NoSql) and Cloud Technologies.
               </p>
               <span className="block font-semibold text-gray-400">
                 How to connect with me ?
