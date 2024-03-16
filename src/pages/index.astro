@@ -1,0 +1,42 @@
+---
+import { Image } from "astro:assets";
+import avatar from "../images/avatar.png";
+import Navbar from "../layouts/navbar.astro";
+---
+
+<Navbar title="Gautam Vaishnav">
+  <section>
+    <div
+      class="w-full max-w-4xl mx-auto flex items-center h-screen text-text1 justify-between"
+    >
+      <div>
+        <h2
+          class="font-bold text-6xl bg-gradient-to-r from-text1/80 via-text1/50 to-text1/30 clipText"
+        >
+          Gautam Vaishnav
+        </h2>
+        <p
+          class="uppercase text-xl pt-2 clipText bg-gradient-to-r from-text1/80 via-text1/50 to-text1/30"
+        >
+          Software Engineer
+        </p>
+      </div>
+      <div class="">
+        <Image
+          height={400}
+          width={400}
+          src={avatar}
+          alt="A description of my image."
+          class={"hue-rotate-15 border-8 border-primary1 rounded-full grayscale-[0.5]"}
+          transition:name="avatar"
+        />
+      </div>
+    </div>
+  </section>
+</Navbar>
+
+<style>
+  .clipText {
+    @apply inline-block text-transparent bg-clip-text;
+  }
+</style>

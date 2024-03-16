@@ -1,0 +1,29 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+  </head>
+  <body class="bg-primary1">
+    <article
+      class="text-text1 flex max-w-7xl mx-auto pt-24 items-center w-full"
+    >
+      <div
+        class="flex-grow prose max-w-3xl dark:prose-invert
+    prose-h1:font-bold prose-h1:text-xl
+    prose-a:text-blue-600 prose-p:text-justify prose-img:rounded-xl
+    prose-headings:underline mx-auto sm:pb-16 pb-10"
+      >
+        <slot />
+      </div>
+    </article>
+  </body>
+</html>

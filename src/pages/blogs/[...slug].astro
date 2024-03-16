@@ -1,0 +1,36 @@
+---
+import { getCollection } from "astro:content";
+import BlogPostLayout from "../../layouts/BlogPostLayout.astro";
+import Navbar from "../../layouts/navbar.astro";
+
+export async function getStaticPaths() {
+  const blogEntries = await getCollection("blogs");
+  return blogEntries.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+---
+
+<Navbar title={entry.data.title}>
+  <BlogPostLayout title={entry.data.title}>
+    <p class="text-sm text-text2">
+      Published: {entry.data.date}
+    </p>
+    <div class="flex items-center gap-x-2 flex-wrap">
+      {
+        entry.data.tags.map((tag) => (
+          <p class="bg-text2/10 text-text2 hover:text-text1 rounded p-2 text-sm hover:bg-text2/30 duration-200 cursor-pointer">
+            #{tag}
+          </p>
+        ))
+      }
+    </div>
+    <div transition:name={entry.slug}>
+      <Content />
+    </div>
+  </BlogPostLayout>
+</Navbar>

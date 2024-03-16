@@ -1,0 +1,63 @@
+---
+import { ViewTransitions } from "astro:transitions";
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <style is:global>
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        @apply bg-primary2;
+      }
+      ::-webkit-scrollbar-thumb {
+        @apply bg-text2 rounded;
+      }
+    </style>
+    <ViewTransitions />
+  </head>
+  <body class="bg-primary1" transition:animate={"initial"}>
+    <header class="absolute z-20 top-0 right-0 left-0">
+      <div
+        class="flex justify-between gap-3 items-center min-h-16 p-3 max-w-4xl mx-auto"
+      >
+        <a
+          href="/"
+          class="text-2xl font-bold text-text2 hover:text-text1/70 bg-primary2 px-2 border border-transparent hover:border-text1/20 rounded duration-150"
+          transition:name="logo"
+        >
+          G
+        </a>
+        <nav
+          class="text-text2 uppercase gap-6 justify-center flex-grow flex items-center"
+          transition:name="navbar"
+        >
+          <a
+            class="hover:text-text1 duration-150 hover:underline decoration-wavy underline-offset-4 text-sm"
+            href="/about">About</a
+          >
+          <a
+            class="hover:text-text1 duration-150 hover:underline decoration-wavy underline-offset-4 text-sm"
+            href="/blogs">Blogs</a
+          >
+        </nav>
+      </div>
+    </header>
+    <article class="text-text1">
+      <slot />
+    </article>
+  </body>
+</html>

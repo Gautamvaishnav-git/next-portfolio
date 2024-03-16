@@ -1,0 +1,13 @@
+---
+import { getCollection } from "astro:content";
+import Navbar from "../layouts/navbar.astro";
+import BlogCard from "../components/BlogCard.astro";
+
+const blogs = await getCollection("blogs");
+---
+
+<Navbar title="Blogs">
+  <div class="pt-24 pb-10 max-w-4xl mx-auto flex flex-col gap-10">
+    {blogs.map((blog) => <BlogCard blog={blog} />)}
+  </div>
+</Navbar>

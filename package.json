@@ -1,31 +1,24 @@
 {
-  "name": "portfolio",
-  "version": "0.1.0",
-  "private": true,
+  "name": "gautam-vaishnav",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "@types/node": "18.15.11",
-    "@types/react": "18.0.35",
-    "@types/react-dom": "18.0.11",
-    "add": "^2.0.6",
-    "autoprefixer": "10.4.14",
-    "eslint": "8.38.0",
-    "eslint-config-next": "13.3.0",
-    "framer-motion": "^10.12.2",
-    "next": "13.3.0",
-    "postcss": "8.4.21",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-icons": "^4.8.0",
-    "react-simple-typewriter": "^5.0.1",
-    "tailwindcss": "3.3.1",
-    "typescript": "5.0.4",
-    "yarn": "^1.22.19"
+    "@astrojs/check": "^0.5.9",
+    "@astrojs/prism": "^3.0.0",
+    "@astrojs/tailwind": "^5.1.0",
+    "astro": "^4.5.4",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.4.2"
   },
-  "packageManager": "yarn@4.1.0"
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.10",
+    "sharp": "^0.33.2"
+  }
 }
