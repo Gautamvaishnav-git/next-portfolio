@@ -18,6 +18,18 @@ const { Content } = await about.render();
       class={"hue-rotate-15 border-8 border-primary1 rounded-full grayscale-[0.5]"}
       transition:name="avatar"
     />
+    <div transition:name="about">
+      <h2
+        class="font-bold text-6xl bg-gradient-to-r from-text1/80 via-text1/50 to-text1/30 clipText"
+      >
+        Gautam Vaishnav
+      </h2><br />
+      <p
+        class="uppercase text-xl pt-2 clipText bg-gradient-to-r from-text1/80 via-text1/50 to-text1/30"
+      >
+        Software Engineer
+      </p>
+    </div>
     <div
       class="flex-grow prose max-w-3xl dark:prose-invert
     prose-h1:font-bold prose-h1:text-xl
@@ -28,3 +40,9 @@ const { Content } = await about.render();
     </div>
   </section>
 </Navbar>
+
+<style>
+  .clipText {
+    @apply inline-block text-transparent bg-clip-text;
+  }
+</style>
