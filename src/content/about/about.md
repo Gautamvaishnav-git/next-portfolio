@@ -31,8 +31,8 @@ title: About
 
 # 📊 GitHub Stats:
 
-[![](https://github-readme-stats.vercel.app/api?username=Gautamvaishnav-git&theme=dark&hide_border=false&include_all_commits=false&count_private=false)](https://github.com/Gautamvaishnav-git)
+[![Gautam's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Gautamvaishnav-git&theme=dark&hide_border=false&include_all_commits=false&count_private=false)](https://github.com/Gautamvaishnav-git)
 
-[![](https://github-readme-streak-stats.herokuapp.com/?user=Gautamvaishnav-git&theme=dark&hide_border=false)](https://github.com/Gautamvaishnav-git)
+[![Gautam's GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=Gautamvaishnav-git&theme=dark&hide_border=false)](https://github.com/Gautamvaishnav-git)
 
-[![](https://github-readme-stats.vercel.app/api/top-langs/?username=Gautamvaishnav-git&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)](https://github.com/Gautamvaishnav-git)
+[![Gautam's GitHub ](https://github-readme-stats.vercel.app/api/top-langs/?username=Gautamvaishnav-git&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)](https://github.com/Gautamvaishnav-git)

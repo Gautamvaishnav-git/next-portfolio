@@ -9,14 +9,17 @@ const { Content } = await about.render();
 ---
 
 <Navbar title="About">
-  <section class="pt-24 max-w-6xl sm:gap-20 gap-10 items-center flex-col mx-auto flex">
+  <section
+    class="pt-24 max-w-6xl sm:gap-20 gap-10 items-center flex-col mx-auto flex"
+  >
     <Image
       height={300}
       width={300}
       src={avatar}
-      alt="A description of my image."
-      class="hue-rotate-15 border-8 border-primary1 rounded-full grayscale-[0.5]"
+      alt="A description of my"
+      class="hue-rotate-15 border-8 border-primary1 rounded-full grayscale-[0.5] sm:block hidden"
       transition:name="avatar"
+      loading={"eager"}
     />
     <div transition:name="about" class="sm:px-0 px-4">
       <h2
