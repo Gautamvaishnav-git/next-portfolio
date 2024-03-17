@@ -7,7 +7,7 @@ import Navbar from "../layouts/navbar.astro";
 <Navbar title="Gautam Vaishnav">
   <section>
     <div
-      class="w-full max-w-4xl mx-auto flex items-center h-screen text-text1 justify-between"
+      class="w-full sm:p-0 px-4 max-w-4xl mx-auto flex sm:flex-row flex-col-reverse items-center sm:h-screen text-text1 justify-between sm:pt-0 pt-20"
     >
       <div transition:name="about">
         <h2
@@ -27,7 +27,7 @@ import Navbar from "../layouts/navbar.astro";
           width={400}
           src={avatar}
           alt="A description of my image."
-          class={"hue-rotate-15 border-8 border-primary1 rounded-full grayscale-[0.5]"}
+          class="hue-rotate-15 border-8 border-primary1 rounded-full grayscale-[0.5] w-auto sm:h-auto h-72"
           transition:name="avatar"
         />
       </div>

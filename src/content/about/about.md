@@ -2,31 +2,30 @@
 title: About
 ---
 
-# 💫 About Me:
+## 📝 About Me:
 
-🌱 I’m currently learning more about **GO lang**
-
-👨‍💻 All of my projects are available at https://github.com/Gautamvaishnav-git?tab=repositories
-
-📫 How to reach me gauravvaishnav8690@gmail.com
+**_I am a passionate software developer with experience in various programming languages and technologies. I enjoy learning new things and exploring different areas of software development. Currently, I am focusing on expanding my knowledge of Go lang. Feel free to connect with me on my social media platforms._**
 
 ## 🌐 Socials:
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/gautamvaishnav)
 [![Medium](https://img.shields.io/badge/Medium-12100E?logo=medium&logoColor=white)](https://medium.com/@gauravvaishnav8690)
 [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/@gautam_vaishnav)
+[![Dev.to](https://img.shields.io/badge/dev-to-d)](https://dev.to/gautamvaishnav)
 
 # 💻 Tech Stack:
 
-- **Programming Languages**: JS/TS, Go Lang, C, Python
-- **Web Development**: JS/TS, React/NextJS, Astro, Angular, TailwindCss
+- **Programming Languages**: JS/TS, Go Lang, C, Python, Node/Bun
+- **Frontend Development**: JS/TS, React/NextJS, Astro, Angular, TailwindCss
 - **Backend Development**: Node.js, Express.js, Go, Flask
 - **Database**: MongoDB, MySQL, PostgreSQL, Redis, Elasticsearch, MsSQL
 - **Version Control**: Git, GitHub, Bitbucket
-- **DevOps**: Docker
+- **DevOps**: Docker, Azure VM
 - **Cloud** Platforms: AWS, Azure
 - **Testing**: Jest, Postman
-- **Other** Tools: VS Code
+- **API Development**: REST, GraphQL, WebSockets
+- **Other Tools**: VS Code, WSL,
+
   <br />
   <br />
 

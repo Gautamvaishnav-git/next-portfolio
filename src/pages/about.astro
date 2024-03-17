@@ -9,16 +9,16 @@ const { Content } = await about.render();
 ---
 
 <Navbar title="About">
-  <section class="pt-24 max-w-6xl gap-20 items-center flex-col mx-auto flex">
+  <section class="pt-24 max-w-6xl sm:gap-20 gap-10 items-center flex-col mx-auto flex">
     <Image
       height={300}
       width={300}
       src={avatar}
       alt="A description of my image."
-      class={"hue-rotate-15 border-8 border-primary1 rounded-full grayscale-[0.5]"}
+      class="hue-rotate-15 border-8 border-primary1 rounded-full grayscale-[0.5]"
       transition:name="avatar"
     />
-    <div transition:name="about">
+    <div transition:name="about" class="sm:px-0 px-4">
       <h2
         class="font-bold text-6xl bg-gradient-to-r from-text1/80 via-text1/50 to-text1/30 clipText"
       >
@@ -34,7 +34,7 @@ const { Content } = await about.render();
       class="flex-grow prose max-w-3xl dark:prose-invert
     prose-h1:font-bold prose-h1:text-xl
     prose-a:text-blue-600 prose-p:text-justify prose-img:rounded-xl
-    prose-headings:underline mx-auto sm:pb-16 pb-10"
+    prose-headings:underline mx-auto sm:pb-16 pb-10 sm:px-0 px-4"
     >
       <Content />
     </div>

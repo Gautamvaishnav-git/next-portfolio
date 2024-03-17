@@ -8,6 +8,14 @@ const blogs = await getCollection("blogs");
 
 <Navbar title="Blogs">
   <div class="pt-24 pb-10 max-w-4xl mx-auto flex flex-col gap-10">
-    {blogs.map((blog) => <BlogCard blog={blog} />)}
+    {
+      blogs.map((blog, index) => {
+        if (index === 0) {
+          return <BlogCard blog={blog} transitionName="about" />;
+        } else {
+          return <BlogCard blog={blog} />;
+        }
+      })
+    }
   </div>
 </Navbar>

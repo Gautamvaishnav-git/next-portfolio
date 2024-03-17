@@ -20,10 +20,10 @@ const { Content } = await entry.render();
     <p class="text-sm text-text2">
       Published: {entry.data.date}
     </p>
-    <div class="flex items-center gap-x-2 flex-wrap">
+    <div class="flex items-center gap-2 flex-wrap">
       {
         entry.data.tags.map((tag) => (
-          <p class="bg-text2/10 text-text2 hover:text-text1 rounded p-2 text-sm hover:bg-text2/30 duration-200 cursor-pointer">
+          <p class="bg-text2/10 text-text2 hover:text-text1 rounded p-2 text-sm hover:bg-text2/30 duration-200 cursor-pointer m-0">
             #{tag}
           </p>
         ))

@@ -3,9 +3,10 @@ import { type CollectionEntry } from "astro:content";
 
 interface Props {
   blog: CollectionEntry<"blogs">;
+  transitionName?: string;
 }
 
-const { blog } = Astro.props;
+const { blog, transitionName } = Astro.props;
 ---
 
 <a
@@ -22,6 +23,15 @@ const { blog } = Astro.props;
   <p class="text-sm text-text2">
     Published: {blog.data.date}
   </p>
+  {
+    transitionName ? (
+      <p transition:name={transitionName} class="text-sm text-text2">
+        Auther: Gautam Vaishnav
+      </p>
+    ) : (
+      <p class="text-sm text-text2">Auther: Gautam Vaishnav</p>
+    )
+  }
 </a>
 
 <style is:global>
